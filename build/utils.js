@@ -6,6 +6,7 @@ const packageConfig = require('../package.json')
 const glob = require('glob')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const PAGE_PATH = path.resolve(__dirname,'../src/pages')
+const merge = require('webpack-merge')
 
 exports.assetsPath = function (_path) {
   const assetsSubDirectory = process.env.NODE_ENV === 'production'
